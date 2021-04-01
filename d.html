@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorseTranslater</title>
+</head>
+<body>
+    <h1>MorseTranslater</h1>
+    <input type="text" id="input" placeholder="번역할 내용을 입력하세요">
+    <input type="button" value="번역" onclick="trans()">
+    <select id="select">
+         <option value="KoToMorse">한국어->모스부호</option>
+         <option value="MorseToKo">모스부호->한국어</option>
+    </select>
+    <br>
+    <textarea id="output" cols="65" rows="10"></textarea>
+
+    <p>
+        How to Use:<br>
+        한글 또는 모스부호의 자모음을 한 자씩 띄어쓰고 번역을 누르시오<br>
+        ex) ㅇ ㅏ ㄴ ㄴ ㅕ ㅇ
+    </p>
+
+    <script>
+         
+        function trans(){
+            var a=document.getElementById("input").value;
+            var b=a.split(" ");
+            var c;
+            var output=[ ];
+
+            var option=document.getElementById("select").value;
+            
+
+            for(var i=0; i<b.length; i++){
+                if(option=="KoToMorse"){c=KoToMorse(b[i]);}
+                else if(option=="MorseToKo"){c=MorseToKo(b[i]);}
+
+                output.push(c);
+
+            }
+
+            var result=output.join(" ");
+            
+            document.getElementById("output").value =result;
+            
+        }
+
+        function MorseToKo(morseValue){
+           var c;
+
+           switch (morseValue){
+                case ".-..": c="ㄱ"; break;
+
+                case "..-.": c="ㄴ"; break;
+
+                case "-...": c="ㄷ"; break;
+
+                case "...-": c="ㄹ"; break;
+
+                case "--": c="ㅁ"; break;
+
+                case ".--": c="ㅂ"; break;
+
+                case "--.": c="ㅅ"; break;
+
+                case "-.-": c="ㅇ"; break;
+
+                case ".--.": c="ㅈ"; break;
+                
+                case "-.-.": c="ㅊ"; break;
+
+                case "-..-": c="ㅋ"; break;
+
+                case "--..": c="ㅌ"; break;
+
+                case "---": c="ㅍ"; break;
+
+                case ".---": c="ㅎ"; break;
+
+
+                case ".": c="ㅏ"; break;
+
+                case "..": c="ㅑ"; break;
+
+                case "-": c="ㅓ"; break;
+
+                case "...": c="ㅕ"; break;
+
+                case ".-": c="ㅗ"; break;
+
+                case "-.": c="ㅛ"; break;
+
+                case "....":  c="ㅜ"; break;
+                    
+                case ".-.": c="ㅠ"; break;
+
+                case "-..": c="ㅡ"; break;
+
+                case "..-":  c="ㅣ"; break;
+
+                case "-.--": c="ㅔ"; break;
+
+                case "--.-": c="ㅐ"; break;
+
+            }
+
+            return c;
+
+        }
+        
+
+        function KoToMorse(morseValue){
+             var c;
+
+             switch (morseValue){
+                  case "ㄱ": c=".-.."; break;
+
+                  case "ㄴ": c="..-."; break;
+
+                  case "ㄷ": c="-..."; break;
+
+                  case "ㄹ": c="...-"; break;
+
+                  case "ㅁ": c="--"; break;
+
+                  case "ㅂ": c=".--"; break;
+
+                  case "ㅅ": c="--."; break;
+
+                  case "ㅇ": c="-.-"; break;
+
+                  case "ㅈ": c=".--."; break;
+
+                  case "ㅊ": c="-.-."; break;
+
+                  case "ㅋ": c="-..-"; break;
+
+                  case "ㅌ": c="--.."; break;
+
+                  case "ㅍ": c="---"; break;
+
+                  case "ㅎ": c=".---"; break;
+
+
+                  case "ㅏ": c="."; break;
+                  
+                  case "ㅑ": c=".."; break;
+
+                  case "ㅓ": c="-"; break;
+
+                  case "ㅕ": c="..."; break;
+
+                  case "ㅗ": c=".-"; break;
+
+                  case "ㅛ": c="-."; break;
+
+                  case "ㅜ": c="...."; break;
+
+                  case "ㅠ": c=".-."; break;
+
+                  case "ㅡ": c="-.."; break;
+
+                  case "ㅣ": c="..-"; break;
+
+                  case "ㅔ": c="-.--"; break;
+
+                  case "ㅐ": c="--.-"; break;
+
+                       
+             }
+
+             return c;
+        }
+
+    </script>
+        
+        
+</body>
+</html>
