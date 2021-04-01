@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <input type="button" value="번역" onclick="trans()">
+    <br><textarea id="output" cols="30" rows="11"></textarea>
+
+    <script>
+        var b;
+        function trans(){
+            var a=document.getElementById("input").value;
+            var b=a;
+
+            switch (a){
+                case ".-..":
+                     a="ㄱ";
+                     break;
+
+                case "..-.":
+                     a="ㄴ";
+                     break;
+
+                case "-...":
+                     a="ㄷ";     
+                     break;
+
+                case "...-":
+                     a="ㄹ";
+                     break;
+
+                case "--":
+                     a="ㅁ";
+                     break;
+
+                case ".--": 
+                     a="ㅂ"
+                     break;
+
+                case "--.":
+                     a="ㅅ";
+                     break;
+
+                case "-.-":
+                     a="ㅇ";
+                     break;
+
+                case ".--.":
+                     a="ㅈ";
+                     break;
+                
+                case "-.-.":
+                     a="ㅊ";
+                     break;
+
+                case "-..-":
+                     a="ㅋ";
+                     break;
+
+                case "--..":
+                     a="ㅌ";
+                     break;
+
+                case "---":
+                     a="ㅍ";
+                     break;
+
+                case ".---":
+                     a="ㅎ";
+                     break;
+            }
+            document.getElementById("output").value =a;
+            
+        }
+
+    </script>
+        
+        
+</body>
+</html>
