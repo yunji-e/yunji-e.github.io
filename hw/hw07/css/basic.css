@@ -1,0 +1,179 @@
+.logo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 80px;
+    margin: 20px;
+    float: left;
+}
+.login{
+    text-align: right;
+}
+.login a {
+    display: inline-block;
+    font-weight: normal;
+    color: black;
+}
+.thumnail {
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: off;
+    background-color: lightgray;
+
+}
+
+nav {
+    clear: both;
+    display: block;
+    border-radius: 50px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 30px;
+    background-color: teal;
+    z-index: 98;
+}
+
+@keyframes menu {
+    from {}
+    to {transform: perspective(500px) rotateY(0deg) rotateX(360deg);}
+}
+
+.menu:hover {
+    background-color: rgb(0, 100, 100);
+    animation: menu 1s;
+}
+.img {
+    display: block;
+    max-width: 700px;
+    padding: 10px;
+    margin: 0 auto;
+}
+ul li{
+    display: inline;
+    list-style: none;
+    line-height: 25px;
+    vertical-align: middle;
+}
+ul li a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    width: 60px;
+    margin: 0px;
+    padding: 10px 15px;
+    float: left;
+}
+
+#side {
+    background-color: white;
+    opacity: 0.5;
+    text-align: center;
+    padding: 2px;
+    margin: 5px;
+    right: 0px; bottom: 50px;
+    position: fixed;
+    z-index: 99;
+}
+#side:hover {
+    opacity: 1;
+}
+#side a {
+    display: block;
+    color: black;
+}
+
+#index {
+    display: inline-block;
+    position: fixed;
+    top: 200px;
+    width: 150px;
+    height: 300px;
+    border: 3px teal double;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+.to_top {
+    display: inline-block;
+    position: fixed;
+    top: 470px;
+    left: 50px;
+}
+.to_top a {
+    text-decoration: none;
+    color: black;
+}
+#index:hover {
+    opacity: 1;
+}
+#index ul{
+    padding-left: 15px;
+}
+#index ul a {
+    color: black;
+    font-weight: normal;
+}
+#index ul li {
+    display: block;
+}
+#index a:hover {
+    color: teal;
+    font-weight: bolder;
+}
+@media(max-width: 1150px) {
+    #index{display: none;}
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked ~ ul {
+    display: none;
+}
+
+.icon {
+    border: 1px black solid;
+    margin: 0;
+    padding: 6px;
+}
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+main {
+    display: block;
+    position: relative;
+    max-width: 800px;
+    padding: 15px;
+    margin: 0 auto;
+}
+main img {
+    width: 100%;
+}
+figcaption {
+    color: gray;
+    font-size: small;
+    text-align: center;
+}
+.info {
+    color: green;
+    font-size: small;
+}
+
+footer {
+    column-count: 2;
+    text-align: left;
+    color: gray;
+}
+
+footer hr {
+    column-span: all;
+}

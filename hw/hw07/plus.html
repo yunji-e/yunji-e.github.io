@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="./css/basic.css"></link>
+        <title>plus</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            table th{
+                text-align: center;
+                border-top: 2px rgba(0, 150, 150, 0.5) dashed;
+                border-bottom: 2px rgba(0, 150, 150, 0.5) dashed;
+                background-color: rgba(0, 150, 150, 0.1);
+            }
+            table td {
+                text-align: center;
+            }
+            .title {
+                padding: 0 5px;
+                text-align: left;
+            }
+            .num {
+                width: 40px;
+                table-layout: fixed;
+            }
+            .title {
+                max-width: 100%;
+            }
+            .time {
+                width: 160px;
+                table-layout: fixed;
+            }
+            .writer {
+                width: 100px;
+                table-layout: fixed;
+            }
+            input[type="checkbox"]{
+                display: inline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="./hw07.html"><img class="logo" src="./img/logo.png"></a>
+            <div class="login">
+                <a href="./login_page.html">Log-in</a> | <a href="#">Join</a>
+                <a href="#"><img src="./img/user.png" class="thumnail"></a>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a class="menu" href="./intro.html">소개</a></li>
+                <li><a class="menu" href="./making.html">제작</a></li>
+                <li><a class="menu" href="./site.html">site</a></li>
+                <li><a class="menu" href="./plus.html">+문의</a></li>
+            </ul>
+        </nav>
+
+        <div id="side">
+            <p class="icon"><a href="#">▲</a></p>
+            <p class="icon"><a href="./hw07.html"><img src="./img/house-outline.png"></a></p>
+        </div>
+
+        <main>
+            <h1>문의</h1>
+            <form>
+                <fieldset>
+                    <p>title: <input type="text" name="title" size="40" method="get" required></p>
+                    <p>name: <input type="text" name="name" method="get" required> 
+                        /password: <input type="password" name="pw" method="post" 
+                        size="4" placeholder="4자리" required></p>
+                    <p>email: <input type="email" name="email" method="post" size="30"></p>
+                    <p><textarea name="question" method="post" rows="10" cols="50" required></textarea></p>
+                    <p><input type="submit" value="저장">
+                        <input type="reset" value="재작성"></p>
+                </fieldset>
+            </form>
+
+            <h1>Q&A</h1>
+            <table>
+                <tr>
+                    <th class="num">번호</th>
+                    <th>제목</th>
+                    <th class="time">시간</th>
+                    <th class="write">작성자</th>
+                </tr>
+                <tr>
+                    <td class="num">1</td>
+                    <td class="title">Lorem ipsum dolor sit amet.</td>
+                    <td class="time">2021-04-18, 20:00</td>
+                    <td class="write">이윤지</td>
+                </tr>
+            </table><br>
+
+            <h1>후원</h1>
+            <form>
+                <fieldset>
+                    <p>name: <input type="text" name="name" method="post" required>
+                        <select name="type">
+                            <option value="1" selected>개인후원</option>
+                            <option value="2">단체후원</option>
+                            <option value="3">기타</option>
+                        </select>
+                        <input type="checkbox" name="open" method="get">비공개 후원</p>
+                    <p>email: <input type="email" name="email" method="post" size="30" placeholder="(선택)소식을 메일로 받을 수 있습니다."></p>
+                    <p>후원 금액: 
+                        <input type="number" name="money" method="post" min="1" max="10000000" value="10000">원</p>
+                    <p><input type="submit" value="후원하기"></p>
+                </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <hr>
+            TEL 000-0000-0000<br>
+            Address 000000000@naver.com<br>
+            상담 가능 시간 12:00 ~ 6:00<br>
+            서울특별시<br>
+            &copy; Copyright all reserved 2021 Yunji_Lee Dongduk student
+        </footer>
+    </body>
+
+</html>
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="./css/basic.css"></link>
+        <title>Log-in</title>
+
+        <style>
+            form {
+                font-size: 20px;
+                width: 500px;
+                margin: 0 auto;
+            }
+            input[type="button"] {
+                width: 50px;
+                height: 50px;
+            }
+            #find {
+                font-size: small;
+                color: gray;
+                font-weight: normal;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="./hw07.html"><img class="logo" src="./img/logo.png"></a>
+            <div class="login">
+                <a href="./login_page.html">Log-in</a> | <a href="#">Join</a>
+                <a href="#"><img src="./img/user.png" class="thumnail"></a>
+            </div>
+        </header>
+
+        <nav>
+            <ul> 
+                <li><a class="menu" href="./intro.html">소개</a></li>
+                <li><a class="menu" href="./making.html">제작</a></li>
+                <li><a class="menu" href="./site.html">site</a></li>
+                <li><a class="menu" href="./plus.html">+문의</a></li>
+            </ul>
+        </nav>
+
+        <div id="side">
+            <p class="icon"><a href="#">▲</a></p>
+            <p class="icon"><a href="./hw07.html"><img src="./img/house-outline.png"></a></p>
+        </div>
+
+        <main>
+            <form>
+                <fieldset>
+                    <p>ID :
+                        <input type="text" name="id" method="get" required></p>
+                    <p>PW : 
+                        <input type="password" name="pw" method="post" required></p>
+                    <input type="submit" value="Log-in">
+                    <a href="#finding" id="find">id/pw 찾기</a>
+                </fieldset>
+            </form>
+
+            <br>
+
+            <form>
+                <fieldset id="finding">
+                    <legend>ID/PW찾기</legend>
+                    <p>name : 
+                        <input type="text" name="name" method="get" required></p>
+                    <p>email : 
+                        <input type="email" name="email" method="post" required></p>
+                    <p>birth : 
+                        <input type="date" name="birth" method="post" required></p>
+                    <input type="submit" value="find">
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="./css/basic.css"></link>
+        <title>site</title>
+        <style>
+            main {
+                column-width: 270px;
+            }
+            p #top, #last {
+                column-span: all;
+            }
+            span .bold {
+                font-weight: 600;
+                font-style: italic;
+            }
+            h1 {
+                color: teal;
+                padding: 0px;
+                font-size: 7mm;
+            }
+            .item {
+                display: inline-block;
+                border-radius: 10px;
+                padding: 5px 10px;
+                margin: 10px 5px;
+                border: 1px teal solid;
+                background-color: white;
+            }
+            .item a {
+                display: block;
+                text-decoration: none;
+                font-weight: normal;
+                color: black;
+            }
+            .item:hover {
+                border: 2px teal solid;
+                box-shadow: 2px 2px black;
+            }
+            .item a:hover {
+                color: teal;
+                font-weight: bold;
+            }
+            .item:active {
+                background-color: lightgray;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="./hw07.html"><img class="logo" src="./img/logo.png"></a>
+            <div class="login">
+                <a href="./login_page.html">Log-in</a> | <a href="#">Join</a>
+                <a href="#"><img src="./img/user.png" class="thumnail"></a>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a class="menu" href="./intro.html">소개</a></li>
+                <li><a class="menu" href="./making.html">제작</a></li>
+                <li><a class="menu" href="./site.html">site</a></li>
+                <li><a class="menu" href="./plus.html">+문의</a></li>
+            </ul>
+        </nav>
+
+        <div id="side">
+            <p class="icon"><a href="#">▲</a></p>
+            <p class="icon"><a href="./hw07.html"><img src="./img/house-outline.png"></a></p>
+        </div>
+
+        <main>
+            <div class="item">
+                <a href="https://www.redprinting.co.kr/ko" target="_blank">
+                    <h1>Redprint</h1>
+                    <p>인쇄 상품은 거의 다 있습니다. 가격이 조금 있지만
+                        대부분 1개부터 제작 가능하며 인터페이스가 깔끔합니다.
+                    </p>
+                    <img src="./img/redprint.png">
+                </a> 
+            </div>
+            <div class="item">
+                <a href="https://www.ohprint.me/" target="_blank">
+                    <h1>OH Print me</h1>
+                    <p>간편한 디자인 툴을 지원하여 포토샵 등의 프로그램 없이도
+                        칼선을 따거나 간편하게 디자인을 할 수 있습니다. 의류 인쇄도
+                        가능하며, 종종 할인 쿠폰 이벤트를 합니다.
+                    </p>
+                    <img src="./img/oprintme.png">
+                </a>
+            </div>
+            <div class="item">
+                <a href="http://www.huniprinting.com/main.asp" target="_blank">
+                    <h1>Huniprinting</h1>
+                    <p>대부분의 종이 인쇄를 서비스합니다. 홈페이지가 깔끔하고
+                        특히 달력 인쇄 폼이 많습니다. 다만 1장부터가 아닌 6개, 8개
+                        등 최소 수량 제한이 있습니다.
+                    </p>
+                    <img src="./img/huni.png">
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://www.marpple.com/kr/" target="_blank">
+                    <h1>Marpple</h1>
+                        <p>천 종류 인쇄로 유명한 곳입니다. 의류를 비롯하여 담요,
+                            가방, 폰 케이스 등을 제작 할 수 있습니다.
+                        </p>
+                        <img src="./img/marpple.png">                
+                    </a>
+            </div>
+            <div class="item">
+                <a href="http://jjomool.com/?is_pcver=T" target="_blank">
+                    <h1>쪼물샵</h1>
+                    <p>투명 보틀, 북보틀, 텀블러, 보온병, 머그컵 등에 인쇄를 할 수
+                        있는 사이트입니다.
+                    </p>
+                    <img src="img/jjomool.png">
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://www.orbsei.com/customorder" target="_blank">
+                    <h1>Orbsei</h1>
+                    <p>사탕에 먹을 수 있는 잉크로 인쇄를 해 주는 업체입니다.</p>
+                    <img src="./img/orbsei.png">
+                </a>
+            </div>
+            <p id ="last">
+                이 외에도 다양한 사이트가 있으니 한 번 찾아보세요!
+                엽서, 카드, 셔츠, 쿠션, 인형, 액자, 포스터, 등신대, 현수막,
+                향수, 오르골, 케이크, 스티커, 명함, 담요, 모자, 양말, 컵,
+                수건, 책, 손거울, 스탬프, 마우스패드, 파우치, 폰케이스,
+                그립톡, 뱃지, 부채, 캘린더, 타투스티커, 펜, 메모지 등
+                <span class="bold">상상 이상으로 많은 것을 할 수 있답니다!</span>
+            </p>
+        </main>
+
+        <footer>
+            <hr>
+            TEL 000-0000-0000<br>
+            Address 000000000@naver.com<br>
+            상담 가능 시간 12:00 ~ 6:00<br>
+            서울특별시<br>
+            &copy; Copyright all reserved 2021 Yunji_Lee Dongduk student
+        </footer>
+    </body>
+
+</html>
+
